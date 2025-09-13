@@ -1,0 +1,93 @@
+/* === Estilos Generales === */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+/* === Encabezado === */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+    font-size: 2.2rem;
+}
+
+/* === Contenedor Principal === */
+.Padre {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hijo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* === Tarjetas (nieto) === */
+.nieto {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nieto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.nieto h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+/* === Imágenes === */
+.nieto img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* === Listas === */
+.nieto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.nieto ul li {
+    background: #ecf0f1;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    background: #34495e; /* Color más oscuro y neutro */
+    color: white;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    position: fixed; /* Fija el footer en la pantalla */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Sombra para que se destaque */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
